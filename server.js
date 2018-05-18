@@ -113,10 +113,10 @@ app.get('/video', function (req, res) {
       if (err) {
         console.log('Error running count. Message:\n'+err);
       }
-      res.render('headings.html', { pageCountMessage : count, dbInfo: dbDetails });
+      res.render('videos.html', { pageCountMessage : count, dbInfo: dbDetails });
     });
   } else {
-    res.render('headings.html', { pageCountMessage : null});
+    res.render('videos.html', { pageCountMessage : null});
   }
 });
 
